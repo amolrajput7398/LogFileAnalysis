@@ -60,7 +60,7 @@ public class LogFileServcieImpl implements LogFileServcie {
 							logEventsDo.setHost(existingLogDto.getHost());
 
 							logEventsList.add(logEventsDo);
-							if (logEventsList.size() == 2) {
+							if (logEventsList.size() == 10) {
 								int[] insertedrows = logDao.insertLogEvents(logEventsList, c);
 								System.out.println(insertedrows);
 								logEventsList.clear();
